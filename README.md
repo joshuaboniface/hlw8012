@@ -3,8 +3,8 @@
 HLW8012 library for Arduino and ESP8266 using the [Arduino Core for ESP8266][1].
 
 [![version](https://img.shields.io/badge/version-1.1.1-brightgreen.svg)](CHANGELOG.md)
-[![travis](https://travis-ci.org/xoseperez/hlw8012.svg?branch=master)](https://travis-ci.org/xoseperez/hlw8012)
-[![codacy](https://img.shields.io/codacy/grade/8490fe74f2f745f299df057fdba1351a/master.svg)](https://www.codacy.com/app/xoseperez/hlw8012/dashboard)
+[![travis](https://travis-ci.org/joshuaboniface/hlw8012.svg?branch=master)](https://travis-ci.org/joshuaboniface/hlw8012)
+[![codacy](https://img.shields.io/codacy/grade/8490fe74f2f745f299df057fdba1351a/master.svg)](https://www.codacy.com/app/joshuaboniface/hlw8012/dashboard)
 [![license](https://img.shields.io/github/license/xoseperez/hlw8012.svg)](LICENSE)
 <br />
 [![donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=xose%2eperez%40gmail%2ecom&lc=US&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest)

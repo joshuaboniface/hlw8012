@@ -87,7 +87,7 @@ double HLW8012::getCurrent() {
 
 }
 
-unsigned int HLW8012::getVoltage() {
+double HLW8012::getVoltage() {
     if (_use_interrupts) {
         _checkCF1Signal();
     } else if (_mode != _current_mode) {
@@ -97,7 +97,7 @@ unsigned int HLW8012::getVoltage() {
     return _voltage;
 }
 
-unsigned int HLW8012::getActivePower() {
+double HLW8012::getActivePower() {
     if (_use_interrupts) {
         _checkCFSignal();
     } else {
@@ -107,13 +107,13 @@ unsigned int HLW8012::getActivePower() {
     return _power;
 }
 
-unsigned int HLW8012::getApparentPower() {
+double HLW8012::getApparentPower() {
     double current = getCurrent();
     unsigned int voltage = getVoltage();
     return voltage * current;
 }
 
-unsigned int HLW8012::getReactivePower() {
+double HLW8012::getReactivePower() {
     unsigned int active = getActivePower();
     unsigned int apparent = getApparentPower();
     if (apparent > active) {
@@ -131,7 +131,7 @@ double HLW8012::getPowerFactor() {
     return (double) active / apparent;
 }
 
-unsigned long HLW8012::getEnergy() {
+double HLW8012::getEnergy() {
 
     // Counting pulses only works in IRQ mode
     if (!_use_interrupts) return 0;
